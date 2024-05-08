@@ -31,7 +31,8 @@ namespace TrybeHotel.Repository
                 var newCity = _context.Cities.First(c => c.CityId == city.CityId);
                 return new CityDto {
                     cityId = newCity.CityId,
-                    name = newCity.Name
+                    name = newCity.Name,
+                    state = newCity.State
                 };
             }
             catch (Exception err)
@@ -43,7 +44,7 @@ namespace TrybeHotel.Repository
         // 3. Desenvolva o endpoint PUT /city
         public CityDto UpdateCity(City city)
         {
-           throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
     }
