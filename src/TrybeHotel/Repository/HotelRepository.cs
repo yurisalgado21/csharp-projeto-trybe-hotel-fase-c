@@ -42,7 +42,8 @@ namespace TrybeHotel.Repository
                     name = newHotel.Name,
                     address = newHotel.Address,
                     cityId = newHotel.CityId,
-                    cityName = newHotel.City!.Name
+                    cityName = newHotel.City!.Name,
+                    state = newHotel.City.State
                 };
             }
             catch (Exception err)
